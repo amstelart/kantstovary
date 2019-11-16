@@ -1,0 +1,12 @@
+// В этом файле должны быть стили для БЭМ-блока date-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.date-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-md) {
+    max-width: 140px;
+  }
+}

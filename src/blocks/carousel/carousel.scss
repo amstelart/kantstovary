@@ -1,0 +1,47 @@
+// В этом файле должны быть стили для БЭМ-блока carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.carousel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 0 30px;
+
+  @media (min-width: $screen-lg) {
+    padding: 0 60px;
+  }
+
+  .owl-nav {
+    button {
+      width: 15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      outline: none;
+
+      @media (min-width: $screen-lg) {
+        width: 30px;
+      }
+
+      svg {
+        stroke: #2d3236;
+      }
+
+      &:hover,
+      &:focus {
+        svg {
+          stroke: #bb2223;
+        }
+      }
+    }
+
+    .owl-prev {
+      left: 0;
+    }
+
+    .owl-next {
+      right: 0;
+    }
+  }
+}

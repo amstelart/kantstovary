@@ -21,7 +21,7 @@ $field-padding-horizontal:    0.7em !default;
 
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid $border-color;
+  // border: 1px solid $border-color;
   margin: $line-height 0;
 
   caption {
@@ -35,12 +35,11 @@ $field-padding-horizontal:    0.7em !default;
 
   td,
   th {
-    padding: $field-padding-vertical $field-padding-horizontal;
+    padding: 12px 18px;
     vertical-align: top;
-    border-bottom: 1px solid $border-color;
 
-    &:not(:first-child) {
-      border-left: 1px solid $border-color;
+    &:not(:last-child) {
+      border-right: 3px solid #fff;
     }
   }
 
@@ -48,9 +47,40 @@ $field-padding-horizontal:    0.7em !default;
     text-align: left;
   }
 
-  &__header {}
+  .cell-num {
+    width: 60px;
+    text-align: center;
+  }
 
-  &__body {}
+  .cell-value {
+    width: 100px;
+    text-align: center;
+  }
+
+  &__header {
+    tr {
+      background-color: #bb2223;
+      color: #fff;
+      font-size: 15px;
+
+      th {
+        vertical-align: middle;
+        padding: 6px 18px;
+      }
+    }
+  }
+
+  &__body {
+
+    tr {
+      background-color: #dddddd;
+      font-size: 16px;
+    }
+
+    tr:nth-of-type(odd) {
+      background-color: #e6e6e6;
+    }
+  }
 
   &__footer {}
 }

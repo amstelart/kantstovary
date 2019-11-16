@@ -59,5 +59,38 @@ $screen-xxl:                  1800px !default;
         }
       }
     }
+
+    .cell-num {
+      width: 100%;
+      background: #bb2223;
+      color: #fff;
+      display: flex;
+
+      &:before {
+        margin-right: 8px;
+      }
+    }
+
+    .cell-value {
+      width: 100%;
+      background-color: #dddddd !important;
+      display: flex;
+
+      &:before {
+        margin-right: 8px;
+      }
+    }
+
+    tr {
+      background-color: #e6e6e6 !important;
+    }
+
+    td {
+      padding: 6px 12px;
+    }
+
+    tbody tr {
+      border: none;
+    }
   }
 }
