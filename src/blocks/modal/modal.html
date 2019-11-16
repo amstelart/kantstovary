@@ -1,0 +1,45 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('blocks/modal/modal.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+-->
+
+<div id="modal-feedback" class="modal" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h2 class="modal__title">Обратная связь</h2>
+      </div>
+      <div class="modal__body">
+        <form action="" class="modal__form">
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Введите ваше имя" id="" name="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Выш e-mail" id="" name="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <textarea class="field-text__input" rows="5" placeholder="Ваше сообщение"></textarea>
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal__footer">
+      </div>
+    </div>
+  </div>
+</div>

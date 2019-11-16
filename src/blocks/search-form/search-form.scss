@@ -1,0 +1,42 @@
+// В этом файле должны быть стили для БЭМ-блока search-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.search-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+
+  .field-text {
+
+    &__input-wrap {
+      position: relative;
+
+      .search-btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        font-size: 18px;
+        color: #b7161f;
+        background: transparent;
+        padding: 0;
+        border-radius: 3px;
+
+        &:hover,
+        &:focus {
+          color: $color-red;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    &__input {
+      padding: 8px 40px 8px 25px;
+      font-size: 16px;
+    }
+  }
+
+}
